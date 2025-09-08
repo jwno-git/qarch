@@ -38,7 +38,7 @@ keys = [
     # Key([mod], "j",),
     # Key([mod], "k",),
     # Key([mod], "l",),
-    Key([mod], "m", lazy.spawn("wlr-randr --output eDP-1 --pos 0,1080 --output HDMI-A-1 --pos 480,0 --output DP-1 --pos -100,-2160")),
+    # Key([mod], "m",),
     # Key([mod], "n",),
     # Key([mod], "o",),
     # Key([mod], "p",),
