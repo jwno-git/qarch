@@ -2,7 +2,6 @@ from libqtile import bar, layout, qtile, widget, hook
 from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
 from libqtile.backend.wayland import InputConfig
 from libqtile.lazy import lazy
-from libqtile.utils import guess_terminal
 from libqtile.widget import base
 from typing import Callable
 import subprocess
@@ -13,7 +12,6 @@ def autostart():
     # Environment varibales
     os.environ["XCURSOR_THEME"] = "Bibata-Modern-Ice"
     os.environ["XCURSOR_SIZE"] = "24"
-    os.environ["GTK_THEME"] = "Tokyonight-Dark"
     os.environ["XDG_CURRENT_DESKTOP"] = "qtile"
     subprocess.Popen(["systemctl", "--user", "import-environment", "GTK_THEME", "GSETTINGS_BACKEND", "XDG_CURRENT_DESKTOP", "XCURSOR_THEME", "XCURSOR_SIZE"])
     # Start display manager first
