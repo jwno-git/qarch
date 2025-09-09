@@ -1,6 +1,7 @@
 amd-ucode
 base
 base-devel
+bluez
 brightnessctl
 btrfs-progs
 cliphist
