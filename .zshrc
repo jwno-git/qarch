@@ -5,7 +5,7 @@ if [[ -n "$DISPLAY" || "$XDG_SESSION_TYPE" == "wayland" ]]; then
     # In GUI Terminal
     if [[ $EUID -eq 0 ]]; then
         # Root prompt: red
-        PS1=' %F{8}%~ %F{1}root%F{8}:%f '
+        PS1=' %F{8}%~ %F{1}CMD%F{8}:%f '
     else
         # User prompt: cyan
         PS1=' %F{8}%~ %F{6}CMD%F{8}:%f '
@@ -14,7 +14,7 @@ else
     # In TTY Terminal
     if [[ $EUID -eq 0 ]]; then
         # Root prompt: red
-        PS1=' %F{7}%~ %F{1}root%F{7}:%f '
+        PS1=' %F{7}%~ %F{1}CMD%F{7}:%f '
     else
         # User prompt: cyan
         PS1=' %F{7}%~ %F{6}CMD%F{7}:%f '
