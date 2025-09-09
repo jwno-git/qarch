@@ -20,6 +20,11 @@ def autostart():
     subprocess.Popen(["mako"])
     subprocess.Popen(["wl-paste", "--watch", "cliphist", "store"])
 
+# @hook.subscribe.client_managed                                                                                                                                                                                                                                                                
+# def firefox_opacity(win):                                                                                                                                                                                                                                                                     
+#     if win.match(Match(wm_class="firefox")):  # app_id on Wayland                                                                                                                                                                                                                             
+#        win.set_opacity(0.85)  # 1.0 = opaque
+
 mod = "mod4"
 terminal = "foot"
 
@@ -154,7 +159,6 @@ layouts = [
         border_focus='#8A7BAD',
         border_normal='#8A7BAD',
         border_width=1,
-        margin=6
     ),
     layout.MonadTall(
         ratio=0.6,
