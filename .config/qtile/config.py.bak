@@ -1,4 +1,4 @@
-from libqtile import bar, layout, qtile, widget, hook
+from libqtile import layout, qtile, widget, hook
 from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
 from libqtile.backend.wayland import InputConfig
 from libqtile.lazy import lazy
@@ -10,7 +10,7 @@ import os
 @hook.subscribe.startup_once
 def autostart():
     # Environment varibales
-    os.environ["XCURSOR_THEME"] = "Bibata-Modern-Ice"
+    os.environ["XCURSOR_THEME"] = "BreezeX-RosePineDawn-Linux"
     os.environ["XCURSOR_SIZE"] = "24"
     os.environ["XDG_CURRENT_DESKTOP"] = "qtile"
     subprocess.Popen(["systemctl", "--user", "import-environment", "GTK_THEME", "GSETTINGS_BACKEND", "XDG_CURRENT_DESKTOP", "XCURSOR_THEME", "XCURSOR_SIZE"])
@@ -151,21 +151,21 @@ groups.append(ScratchPad("scratchpad", [
 
 layouts = [
     layout.Max(
-        border_focus='#6A6DA0',
-        border_normal='#6A6DA0',
+        border_focus='#8A7BAD',
+        border_normal='#8A7BAD',
         border_width=1,
         margin=6
     ),
     layout.MonadTall(
         ratio=0.6,
-        border_focus='#6A6DA0',
+        border_focus='#8A7BAD',
 	    border_normal='#000000',
 	    border_width=1,
         margin=6,
     ),
     layout.MonadWide(
         ratio=0.6,
-        border_focus='#6A6DA0',
+        border_focus='#8A7BAD',
 	    border_normal='#000000',
 	    border_width=1,
         margin=6,
@@ -208,8 +208,8 @@ bring_front_click = False
 floats_kept_above = True
 cursor_warp = False
 floating_layout = layout.Floating(
-    border_focus='#6A6DA0',
-    border_normal='#6A6DA0',
+    border_focus='#8A7BAD',
+    border_normal='#8A7BAD',
     border_width=1,
     margin=6,
     float_rules=[
@@ -269,7 +269,7 @@ wl_input_rules = {
 }
 
 # xcursor theme (string or None) and size (integer) for Wayland backend
-wl_xcursor_theme = "BreezeX-RosePine-Linux"
+wl_xcursor_theme = "BreezeX-RosePineDawn-Linux"
 wl_xcursor_size = 24
 
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
